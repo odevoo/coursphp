@@ -14,6 +14,7 @@
 
       <div><input type="radio" name="radio" value="Femme"><label>Femme</label>
       <input type="radio" name="radio" value="Homme"><label>Homme</label></div>
+      <div><textarea name="textarea" rows="8" cols="40" value=""></textarea></div>
 
       <div><input type="file" name="file" value=""></div>
       <div><select class="select" name="select">
