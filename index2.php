@@ -21,9 +21,9 @@ foreach ($aLangages as $id => $a2langage) {
     $enteteTableau = '<tr>';
     $contenuTableau = '<tr>';
     foreach ($a2langage as $entete => $value) {
-        $enteteTableau.= '<th>'.strtoupper($entete).'</th>';
-        if(is_numeric($value)) $contenuTableau.='<td class="text-right">'.$value.'</td>';
-        else  $contenuTableau.='<td>'.$value.'</td>';
+      $enteteTableau.= '<th>'.strtoupper($entete).'</th>';
+      if(is_numeric($value)) $contenuTableau.='<td class="text-right">'.$value.'</td>';
+      else  $contenuTableau.='<td>'.$value.'</td>';
     }
     echo $enteteTableau.= '</tr></thead><tbody>';
     echo $contenuTableau.='</tr>';
@@ -65,13 +65,13 @@ echo '<p>'.dateUs($sDate1).'</p>' ;
 echo '<p>'.dateFr($sDate2).'</p>' ;
 function dateUs($dte){
 
-$dtereturn = explode('/', $dte);
-return $dtereturn[2].'-'.$dtereturn[1].'-'.$dtereturn[0];
+  $dtereturn = explode('/', $dte);
+  return $dtereturn[2].'-'.$dtereturn[1].'-'.$dtereturn[0];
 
 }
 
 function dateFr($dte){
- return substr($dte, 8, 2).'/'.substr($dte, 5, 2).'/'.substr($dte, 0, 4);
+  return substr($dte, 8, 2).'/'.substr($dte, 5, 2).'/'.substr($dte, 0, 4);
 }
 ///////////////////////////////////////////////////////////////////
 
@@ -82,7 +82,7 @@ function impaire($val){
   return ($val & 1);
 }
 function paire($val){
-return !($val & 1);
+  return !($val & 1);
 }
 
 echo "<pre>";
@@ -94,7 +94,7 @@ echo "</pre>";
 
 function double($val){
 
- return $val * 2;
+  return $val * 2;
 }
 
 function cube($val){
@@ -105,7 +105,7 @@ function racine($val){
   return $val ** 0.5;
 }
 function carre($val){
- return $val * $val;
+  return $val * $val;
 }
 echo "<pre>";
 print_r(array_map('double', $aTab2));
